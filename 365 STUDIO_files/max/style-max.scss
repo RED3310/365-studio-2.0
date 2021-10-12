@@ -1,0 +1,370 @@
+
+ul,li {
+  list-style: none;
+  padding: 0;
+}
+
+.section-acquaintance {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left-content {
+    padding-right: 105px ;
+    .img-fluid {
+        max-width: 419px;
+    }
+  }
+
+  &__right-content {
+    padding: 60px 0 60px 120px;
+    border-left: 4px solid #41533A;
+    p {
+      color: #41533A;
+    }
+
+    .title {
+      margin-top: 0;
+      font-size: 70px;
+      font-weight: 500;
+      color: #41533A;
+      line-height: 100%;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      font-weight: 600;
+      color: #41533A;
+    }
+  }
+}
+
+.section-quality {
+
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left-content {
+    border-right: 4px solid #41533A;
+    padding: 0px 105px 0px 0;
+    .title {
+      font-size: 36px;
+      color: #41533A;
+      line-height: 100%;
+      text-align: right;
+      margin-bottom: 40px;
+    }
+
+    ul {
+      width: 800px;  
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+        p { 
+          text-align: right;
+          color: #41533A;
+        }          
+        span {
+          min-width: 77px;
+          height: 77px;
+          font-size: 36px;
+          border: 1px solid #41533A;
+          border-radius: 50%;
+          padding-left: 10px;
+          margin-left: 40px;
+          color: #41533A;
+          display: flex;
+          align-items: center;  
+        }
+      }         
+    }
+  }
+
+  &__right-content {
+    .img-fluid {
+      max-width: 419px;
+    }       
+  }
+}
+
+.section-result {
+
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__left-content {
+    .img-fluid {
+      max-width: 419px;
+    }       
+  }
+
+  &__right-content {
+
+    padding: 0px 0 0px 105px;
+    border-left: 4px solid #41533A;
+
+    .title {
+      font-size: 36px;
+      color: #41533A;
+      line-height: 100%;
+      margin-bottom: 40px;
+    }
+    
+    ul { width: 800px;
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    
+        p {color: #41533A;}
+
+        span {
+          min-width: 53px;
+          height: 53px;
+          font-size: 24px;
+          border: 1px solid #41533A;
+          border-radius: 50%;
+          padding-left: 10px;
+          margin-right: 40px;
+          color: #41533A;
+          display: flex;
+          align-items: center;       
+        }   
+      }       
+    }
+  }
+}
+
+.section-footer {
+  background-image: url('./Layer6.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  padding: 90px 0 95px 0;
+  margin-top: 50px;
+  text-align: center;
+  .title {
+    font-size: 36px;
+    color: white;
+    padding-bottom: 30px;
+    line-height: 50px;
+  }
+  .link-mail {
+    border: 2px solid white;
+    border-radius: 60px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 61px;
+    margin-top: 20px;
+  }
+}
+
+// ------------------------------------ RESPONSIVE
+
+@media (max-width: 1500px) {
+
+  .section-acquaintance {
+
+    &__left-content { padding: 45px 40px 45px 0; }
+    &__right-content {  padding-left:  40px; }
+  }
+    
+  .section-quality {
+
+    &__right-content { padding: 45px 0 45px 40px; }
+    &__left-content {
+
+      padding-right:  40px;
+
+      ul {
+        width: auto;
+      }   
+    }
+  }
+
+  .section-result {
+    &__left-content { padding: 45px 40px 45px 0; }
+    &__right-content {  
+      padding-left:  40px; 
+
+      ul {
+        width: auto;
+        max-width: 800px;  
+      }   
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+
+  .section-acquaintance {
+   
+    &__left-content {
+      padding: 45px 40px 45px 0;
+      border: none;
+    }
+    
+    &__right-content {
+      max-width: 800px;
+      margin-left: 0;
+      padding-left: 40px;
+    
+      .title {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .section-quality {
+
+    &__right-content {
+
+      padding: 45px 0 45px 40px;
+      border: none;
+
+      .img-fluid {
+        max-width: 419px;
+      }
+    
+    }
+
+    &__left-content {
+
+      .title {
+        text-align: center;
+      }
+
+      border-right: 4px solid #41533A;
+
+      ul {
+        margin-right: 0;  
+        li {
+          span {
+            margin-left: 20px;              
+          }
+    
+          p { 
+            text-align: right; 
+            margin: 0;
+            br {
+              display: none;
+            }
+          }
+        } 
+      }        
+    }     
+  }
+
+  .section-result {
+
+    &__left-content {
+      .img-fluid {
+        max-width: 419px;
+        }
+      }
+
+    &__right-content {
+
+      .title {
+        text-align: center;
+      }
+
+      ul {
+        margin-right: 0;   
+        li {
+          span {
+            margin-right: 20px;              
+          }
+          p { margin: 0;
+            br {
+              display: none;
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+@media (max-width: 952px) {
+    
+  .section-acquaintance,
+  .section-quality,
+  .section-result {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+
+    .img-fluid {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__left-content {
+      width: 100%;
+      padding: 0;
+      border: none;
+     }
+    &__right-content {
+       width: 100%;
+       padding: 0;
+       border: none;
+    }
+  }
+
+  .section-acquaintance,
+  .section-result {
+    flex-wrap: wrap-reverse;
+  } 
+  
+  .section-acquaintance {
+    &__right-content {    
+      .title {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+
+  .section-acquaintance {
+    &__right-content {    
+      .title {
+        font-size: 48px;
+      }
+    }
+  }
+
+  .section-footer {
+    .link-mail {
+     font-size: 32px;         
+    }
+  }
+}
+
+@media (max-width: 420px) {
+
+  .section-acquaintance {
+    &__right-content {    
+      .title {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+
+
